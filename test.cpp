@@ -58,7 +58,7 @@ brightness_test_1()
     size_t bin_max=2;
     size_t color = 10 - ((bin_1 * 9) / bin_max);
 
-    assert(color == 9);                            //самый тёмный цвет
+    assert(color == 1);                            //самый тёмный цвет
 
 }
 
