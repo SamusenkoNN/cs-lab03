@@ -1,5 +1,13 @@
 #include "svg.h"
+#include "string.h"
 
+
+void
+bin_brightness(size_t bin_1, size_t bin_max, string& color){
+    size_t color = 10 - ((bin_1 * 9) / bin_max);
+    color = "#";
+    color += to_string(color_number + color_number * 10 + color_number * 100);
+}
 
 void
 svg_begin(double width, double height) {
@@ -46,6 +54,7 @@ show_histogram_svg(const vector<size_t>& bins) {
         if (max_bin < bin) {
             max_bin = bin;
         }
+
     }
 
     svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);
@@ -55,9 +64,14 @@ show_histogram_svg(const vector<size_t>& bins) {
         if (max_bin > MAX_ASTERISK) {
             height = MAX_ASTERISK * (static_cast<double>(bin) / max_bin);
         }
+
+        string color_string;
+        bin_brightness(bin, max_bin, olor_string);
+
+
         const double bin_width = BLOCK_WIDTH * height;
         svg_text(TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
-        svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT, "red", "aqua");
+        svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT, "red", color_string);
         top += BIN_HEIGHT;
     }
 
