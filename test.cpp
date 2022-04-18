@@ -1,8 +1,12 @@
 #include "histogram.h"
+#include "svg.h"
 #include <cassert>
 #include <string.h>
-#include "svg.h"
+
+
+
 using namespace std;
+
 void
 test_positive() {
     double min = 0;
@@ -70,9 +74,22 @@ brightness_test_2()
     size_t color = 10 - ((bin_1 * 9) / bin_max);
 
     assert(color== 9);                            //самый светлый цвет
+}
+/*
+
+void
+brightness_test()
+{
+    size_t bin=1;
+    size_t max_bin=9;
+    string color_string;
+    bin_brightness(bin, max_bin, color_string);
+
+
+    assert(color_string=="#999");
 
 }
-
+*/
 
 main()
 {
@@ -81,6 +98,13 @@ main()
     test2();
     test3();
     test4();
+
     brightness_test_1();
     brightness_test_2();
+
+    /*
+    brightness_test();
+     */
+
+
 }

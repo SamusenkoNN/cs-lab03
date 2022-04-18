@@ -1,13 +1,25 @@
 #include "svg.h"
-#include "string.h"
+#include <string.h>
+#include <iostream>
+
+using namespace std;
 
 
 void
 bin_brightness(size_t bin_1, size_t bin_max, string& color){
-    size_t color = 10 - ((bin_1 * 9) / bin_max);
+    size_t color_number = 10 - ((bin_1 * 9) / bin_max);
     color = "#";
     color += to_string(color_number + color_number * 10 + color_number * 100);
 }
+
+/*
+size_t
+brightness(size_t bin_1, size_t bin_max){
+    size_t number = 10 - ((bin_1 * 9) / bin_max);
+    return number;
+
+}
+*/
 
 void
 svg_begin(double width, double height) {
@@ -66,8 +78,12 @@ show_histogram_svg(const vector<size_t>& bins) {
         }
 
         string color_string;
-        bin_brightness(bin, max_bin, olor_string);
+        bin_brightness(bin, max_bin, ñolor_string);
 
+        /*size_t color_number=brightness(bin, max_bin);
+        color_string = "#";
+        color_string += to_string(color_number + color_number * 10 + color_number * 100);
+        */
 
         const double bin_width = BLOCK_WIDTH * height;
         svg_text(TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
