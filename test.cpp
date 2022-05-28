@@ -45,12 +45,4 @@ void test4()
     assert(max == 0);
 }
 
-int
-main()
-{
-    test_positive();
-    test1();
-    test2();
-    test3();
-    test4();
-}
+
