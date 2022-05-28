@@ -3,23 +3,20 @@
 void
 find_minmax(const vector<double>& numbers, double& min, double& max)
 {
-    if (numbers.size() == 0)
-    {
+    if (numbers.size() == 0) {
         return;
     }
-    else
-
     min = numbers[0];
-    max = numbers [0];
-    for (double number : numbers)
+    max = numbers[0];
+    for (auto num : numbers)
     {
-        if (number < min)
+        if (num < min)
         {
-            min = number;
+            min = num;
         }
-        if (number > max)
+        if (num > max)
         {
-            max = number;
+            max = num;
         }
     }
 }
