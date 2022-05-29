@@ -111,8 +111,15 @@ show_histogram_text(const vector<size_t>& bins)
 }
 
 
-int main()
+int main(int argc, char* argv[])
 {
+    if (argc > 1) {
+        for(int i=0; i<argc; i++){
+            cout<<"argv["<<i+1<<"]= "<<argv[i]<<endl;
+        }
+        return 0;
+    }
+
     curl_global_init(CURL_GLOBAL_ALL);
 
     const auto data = read_input(cin, true);
@@ -121,5 +128,5 @@ int main()
 
     show_histogram_svg(bins);
 
-    return 0;
+
 }
