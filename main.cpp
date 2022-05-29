@@ -1,10 +1,11 @@
+#include <curl/curl.h>
 #include <iostream>
 #include <vector>
 #include <cmath>
 #include "histogram.h"
 #include "svg.h"
-using namespace std;
 
+using namespace std;
 
 
 
@@ -112,6 +113,8 @@ show_histogram_text(const vector<size_t>& bins)
 
 int main()
 {
+    curl_global_init(CURL_GLOBAL_ALL);
+
     const auto data = read_input(cin, true);
 
     const auto bins = make_histogram(data);

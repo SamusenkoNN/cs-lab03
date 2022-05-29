@@ -29,6 +29,7 @@ svg_text(double left, double baseline, string text) {
    cout << "<text x='"<<left<<"' y='"<<baseline<<"'>"<<text<<"</text>";
 
 }
+
 void
 show_histogram_svg(const vector<size_t>& bins) {
     const auto IMAGE_WIDTH = 400;

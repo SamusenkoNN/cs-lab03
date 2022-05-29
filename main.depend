@@ -1,13 +1,70 @@
 # depslib dependency file v1.0
-1650218267 source:c:\users\админ\desktop\Программирование\Проекты\lab03\main.cpp
+1653820153 source:c:\users\админ\desktop\Программирование\Проекты\lab03\main.cpp
+	<curl/curl.h>
 	<iostream>
 	<vector>
 	<cmath>
 	"histogram.h"
+	"svg.h"
 
-1650218649 c:\users\админ\desktop\Программирование\Проекты\lab03\histogram.h
+1653769725 c:\users\админ\desktop\Программирование\Проекты\lab03\histogram.h
 	<vector>
 
-1650218649 source:c:\users\админ\desktop\Программирование\Проекты\lab03\histogram.cpp
+1653770314 source:c:\users\админ\desktop\Программирование\Проекты\lab03\histogram.cpp
 	"histogram.h"
+
+1653753876 source:c:\users\админ\desktop\Программирование\Проекты\lab03\test.cpp
+	"histogram.h"
+	<cassert>
+
+1652071940 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"options.h"
+	"header.h"
+	"typecheck-gcc.h"
+
+1652239120 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\curlver.h
+
+1652071940 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1652071940 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\easy.h
+
+1652071940 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\multi.h
+	"curl.h"
+
+1652071940 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\urlapi.h
+	"curl.h"
+
+1652071940 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\options.h
+
+1652076210 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\header.h
+
+1652071940 c:\users\админ\desktop\Программирование\Проекты\lab03\curl\include\curl\typecheck-gcc.h
+
+1653753765 c:\users\админ\desktop\Программирование\Проекты\lab03\svg.h
+	<vector>
+	<iostream>
+
+1653819853 source:c:\users\админ\desktop\Программирование\Проекты\lab03\svg.cpp
+	"svg.h"
 
