@@ -96,11 +96,15 @@ int main()
 
     DWORD info = GetVersion();
 
-    printf("version = %u\n", info);
-    printf("version = %x\n", info);
+    printf("Version Windows = %u\n", info);
+    printf("Version Windows = %x\n", info);
+
+    DWORD mask = 0b00000000'00000000'11111111'11111111;
+    DWORD version = info & mask;
+    printf("Version Windows  = %08x\n", version);
 
     return 0;
-    return 0;
+
 
     size_t number_count;
     cerr << "Enter number count:";
