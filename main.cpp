@@ -7,8 +7,8 @@
 #include <sstream>
 #include <string>
 
-using namespace std;
 
+using namespace std;
 
 
 vector<double>
@@ -125,7 +125,9 @@ write_data(void* items, size_t item_size, size_t item_count, void* ctx)
 Input
 download(const string& address)
 {
+
     curl_global_init(CURL_GLOBAL_ALL);
+
 
     stringstream buffer;
 

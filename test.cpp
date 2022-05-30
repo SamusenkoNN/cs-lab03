@@ -5,7 +5,8 @@
 #include "test.h"
 
 void
-test_positive() {
+test_positive()
+{
     double min = 0;
     double max = 0;
     find_minmax({1, 2, 3}, min, max);
@@ -21,6 +22,7 @@ void test1()
     assert(max == -1);
     assert(min == -3);
 }
+
 void test2()
 {
     double min = 0;
@@ -48,6 +50,7 @@ void test4()
     assert(max == 0);
 }
 
+
 void
 brightness_test_1()
 {
@@ -67,6 +70,7 @@ brightness_test_2()
     bin_brightness(bin, max_bin, color_string);
     assert(color_string=="#111");
 }
+
 
 
 

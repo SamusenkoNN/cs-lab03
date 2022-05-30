@@ -15,6 +15,10 @@
 1653770314 source:c:\users\админ\desktop\Программирование\Проекты\lab03\histogram.cpp
 	"histogram.h"
 
+1653909171 D
+	<sstream>
+	<string>
+
 1653857424 source:c:\users\админ\desktop\Программирование\Проекты\lab03\test.cpp
 	"histogram.h"
 	"svg.h"
@@ -79,13 +83,13 @@
 	<vector>
 	<iostream>
 
-1653770314 source:c:\users\админ\desktop\proga\projects\lab03\histogram.cpp
+1653913764 source:c:\users\админ\desktop\proga\projects\lab03\histogram.cpp
 	"histogram.h"
 
-1653769725 c:\users\админ\desktop\proga\projects\lab03\histogram.h
+1653913764 c:\users\админ\desktop\proga\projects\lab03\histogram.h
 	<vector>
 
-1653869329 source:c:\users\админ\desktop\proga\projects\lab03\main.cpp
+1653913943 source:c:\users\админ\desktop\proga\projects\lab03\main.cpp
 	<curl/curl.h>
 	<iostream>
 	<vector>
@@ -94,6 +98,17 @@
 	"svg.h"
 	<sstream>
 	<string>
+
+1653869329 .h>
+
+1653909110 04-2
+	<iostream>
+	<vector>
+	<cmath>
+	"histogram.h"
+	"svg.h"
+	<vector>
+	<iostream>
 
 1652071940 c:\users\админ\desktop\proga\projects\lab03\curl\include\curl\curl.h
 	"curlver.h"
@@ -139,23 +154,27 @@
 
 1652071940 c:\users\админ\desktop\proga\projects\lab03\curl\include\curl\typecheck-gcc.h
 
-1653857424 c:\users\админ\desktop\proga\projects\lab03\svg.h
+1653913780 c:\users\админ\desktop\proga\projects\lab03\svg.h
 	<vector>
 	<iostream>
+	<windows.h>
+	<tchar.h>
 
-1653852472 source:c:\users\админ\desktop\proga\projects\lab03\svg.cpp
+1653916720 source:c:\users\админ\desktop\proga\projects\lab03\svg.cpp
 	"svg.h"
+	<windows.h>
+	<tchar.h>
 	<string.h>
 	<iostream>
 
-1653857424 source:c:\users\админ\desktop\proga\projects\lab03\test.cpp
+1653914506 source:c:\users\админ\desktop\proga\projects\lab03\test.cpp
 	"histogram.h"
 	"svg.h"
 	<cassert>
 	<string.h>
 	"test.h"
 
-1653843540 c:\users\админ\desktop\proga\projects\lab03\test.h
+1653913943 c:\users\админ\desktop\proga\projects\lab03\test.h
 	<vector>
 	<iostream>
 
