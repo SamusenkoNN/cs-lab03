@@ -2,6 +2,9 @@
 #define SVG_H_INCLUDED
 #include <vector>
 #include <iostream>
+#include <windows.h>
+#include <tchar.h>
+
 using namespace std;
 
 void
@@ -15,6 +18,8 @@ svg_rect(double x, double y, double width, double height, string stroke, string 
 
 void
 svg_text(double left, double baseline, string text);
+
+void get_version_info(DWORD &version_major, DWORD &version_minor, DWORD &build);
 
 void
 show_histogram_svg(const vector<size_t>& bins);

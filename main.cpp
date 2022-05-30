@@ -3,10 +3,7 @@
 #include <cmath>
 #include "histogram.h"
 #include "svg.h"
-#include <windows.h>
-#include <stdio.h>
 
-DWORD WINAPI GetVersion(void);
 
 using namespace std;
 
@@ -93,32 +90,6 @@ show_histogram_text(const vector<size_t>& bins)
 int main()
 {
 
-
-    DWORD info = GetVersion();
-
-    printf("Version Windows = %u\n", info);
-    printf("Version Windows = %x\n", info);
-
-    DWORD mask = 0b00000000'00000000'11111111'11111111;
-    DWORD version = info & mask;
-    printf("Version Windows  = %08x\n", version);
-
-        DWORD platform = info >> 16;
-
-    DWORD version_mask = 0b00000000'11111111;
-    DWORD version_major = version & version_mask;
-    DWORD version_minor = version >> 8;
-
-    DWORD build;
-    if ((info & 0x80000000) == 0) {
-        build = platform;
-    }
-
-    printf("Windows v%u.%u (build %u)\n", version_major, version_minor, build);
-
-    return 0;
-
-
     size_t number_count;
     cerr << "Enter number count:";
     cin >> number_count;
@@ -133,4 +104,6 @@ int main()
     const auto bins = make_histogram(numbers, bin_count);
 
     show_histogram_svg(bins);
+
+    return 0;
 }
