@@ -1,5 +1,8 @@
 #include "histogram.h"
+#include "svg.h"
 #include <cassert>
+#include <string.h>
+#include "test.h"
 
 void
 test_positive() {
@@ -44,5 +47,30 @@ void test4()
     assert(min == 0);
     assert(max == 0);
 }
+
+void
+brightness_test_1()
+{
+    size_t bin=9;
+    size_t max_bin=1;
+    string color_string;
+    bin_brightness(bin, max_bin, color_string);
+    assert(color_string=="#999");
+}
+
+void
+brightness_test_2()
+{
+    size_t bin=1;
+    size_t max_bin=9;
+    string color_string;
+    bin_brightness(bin, max_bin, color_string);
+    assert(color_string=="#111");
+}
+
+
+
+
+
 
 

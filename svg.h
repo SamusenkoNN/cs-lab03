@@ -5,7 +5,7 @@
 using namespace std;
 
 void
-svg_begin(double width, double height);
+bin_brightness(size_t bin_1, size_t bin_max, string& color);
 
 void
 svg_end();
