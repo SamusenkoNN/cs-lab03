@@ -11,3 +11,34 @@
 1650218649 source:c:\users\админ\desktop\Программирование\Проекты\lab03\histogram.cpp
 	"histogram.h"
 
+1653905531 source:c:\users\админ\desktop\proga\projects\lab03\histogram.cpp
+	"histogram.h"
+
+1653905531 c:\users\админ\desktop\proga\projects\lab03\histogram.h
+	<vector>
+
+1653909171 source:c:\users\админ\desktop\proga\projects\lab03\main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+	"histogram.h"
+	"svg.h"
+	<windows.h>
+	<stdio.h>
+
+1653908386 c:\users\админ\desktop\proga\projects\lab03\svg.h
+	<vector>
+	<iostream>
+
+1653908386 source:c:\users\админ\desktop\proga\projects\lab03\svg.cpp
+	"svg.h"
+
+1653909110 source:c:\users\админ\desktop\proga\projects\lab03\test.cpp
+	"histogram.h"
+	<cassert>
+	"test.h"
+
+1653909110 c:\users\админ\desktop\proga\projects\lab03\test.h
+	<vector>
+	<iostream>
+
