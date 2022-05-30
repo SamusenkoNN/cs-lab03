@@ -1,8 +1,10 @@
 #include "histogram.h"
 #include <cassert>
+#include "test.h"
 
 void
-test_positive() {
+test_positive()
+{
     double min = 0;
     double max = 0;
     find_minmax({1, 2, 3}, min, max);
@@ -18,6 +20,7 @@ void test1()
     assert(max == -1);
     assert(min == -3);
 }
+
 void test2()
 {
     double min = 0;
@@ -45,12 +48,4 @@ void test4()
     assert(max == 0);
 }
 
-int
-main()
-{
-    test_positive();
-    test1();
-    test2();
-    test3();
-    test4();
-}
+
